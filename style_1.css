@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'pixeled';
+  src: url('CHERI___.TTF');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E0FFFF;
+    height: 100vh;
+    font-family: 'pixeled';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    background-color: #008B8B;
+    color: #eaeaea;
+    height: 15vh;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo img{
+    width: 300px;
+    height: auto;
+}
+
+.container{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    margin-bottom: 2vh;
+}
+
+.slider{
+    width: 600px;
+    overflow: hidden;
+}
+
+
+.slide_left{
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-right: 40px solid black;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid transparent;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+.slide_left div{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 35px solid transparent;
+    border-right: 35px solid #ede0e0;
+    border-bottom: 35px solid transparent;
+    border-left: 35px solid transparent;
+    top: -35px;
+    left: -29px;
+    z-index: 3;
+}
+
+.slide_right{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid black;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.slide_right div{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 35px solid #ede0e0;
+    top: -35px;
+    left: -41px;
+    z-index: 3;
+}
+
+#gallery{
+    list-style: none;
+    display: flex;
+}
+#gallery li{
+    background-color: #000;
+    width: 150px;
+    height: 112px
+}
+
+#gallery img{
+    width: 150px;
+    height: 112px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+a{
+    text-decoration: none;
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+}
+#secondOverlay{
+    background-color: rgba(33, 35, 38, 0.69);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 4;
+}
+
+.uvecane_slike{
+    max-width: 380px;
+    height: auto;
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+    margin-top: -8px;
+}
+
+.alt{
+    font-size: 1.5rem;
+    color: #454d45;
+}
+.bigImage{
+    max-width: 574px;
+    height: auto;
+}

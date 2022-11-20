@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'pixeled';
+  src: url('CHERI___.TTF');
+}
+
+html {
+  font-family: 'pixeled';
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+footer {
+  font-size: .8em;
+  margin: 4em 0;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time {
+  font-size: 2em;
+}
